@@ -6,7 +6,6 @@
 
 semua hasilnya ada di branch HTML
 
-===================================================
 JANGAN DOWNLOAD ZIP NANTI WINDOWS DEFENDER NGAMOK
 ===================================================
 
