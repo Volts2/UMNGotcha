@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Feed the Capybara!</title>
+		<style>
+		canvas {
+			border: 1px solid black;
+		}
+
+		.container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: auto;
+		}
+
+		h1{
+			text-align: center;
+		}
+
+		p{
+			text-align: center;
+		}
+
+		.tombol{
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			
+		}
+
+		.canvas-background{
+			background-image: url("background.jpg");
+			background-size: cover;
+		}
+
+		h2 {
+			text-align: center;
+		}
+	</style>
+	</head>
+
+	<body>
+		<h1>Capybara Adventure!</h1>
+		<div id="stats">
+			<h2>Stats <span id="name"></span></h2>
+			<p id="hunger">Hunger: 100%</p>
+			<p id="happiness">Happiness: 100%</p>
+			<p id="cleanliness">Cleanliness: 100%</p>
+			<p id="sleepy">Sleepy: 100%</p>
+		</div>
+		<div class="container">
+			<canvas id="canvas" width="1000" height="500" class="canvas-background"></canvas>
+		</div>
+		<p>Score: <span id="score">0</span></p>
+		<p>High Score: <span id="high-score">0</span></p>
+		<div class="tombol">
+			<button id="start-button">Start</button>
+			<button id="reset-button">Stop</button>
+			<button onclick="location.href='index.html'">Back</button>
+		</div>
+		<script src="snake.js"></script>
+		<script>
+    	let name = sessionStorage.getItem('name');
+		document.getElementById('name').innerHTML = name;
+		</script>
+	</body>
+
+</html>

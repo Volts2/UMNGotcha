@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UMN Gotcha</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            background: url("Gambar/wallpaper.jpeg");
+            backdrop-filter: blur(8px);
+            background-attachment: fixed;
+            background-size: contain;
+        }
+
+        #menu {
+            margin-top: 50px;
+        }
+
+        #menu h2 {
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 20px;
+        }
+
+        #menu img {
+            margin-top: 20px;
+            width: auto;
+            height: 400px;
+        }
+
+        #tittle h1 {
+            font-family: fantasy;
+        }
+
+        #tittle img {
+            margin-top: 20px;
+            width: auto;
+            height: 50px;
+        }
+
+        .play {
+            box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .8);
+            width: 200px;
+        }
+
+        button {
+            margin: 20px;
+            background-color: green;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="tittle">
+            <img src="Gambar/logo.png" class="img-fluid rounded-3 rounded mx-auto d-block">
+            <h1 class="text-center">CapyCare</h1>
+            <hr class="border border-danger opacity-75 border-4">
+        </div>
+
+        <div id="menu">
+            <img src="Gambar/capybara-love-logo_7688-559.avif" class="img-fluid rounded-3 rounded mx-auto d-block">
+            <h2 class="text-center">Name Your Capybara</h2>
+            <div class="row">
+                <div class="mx-auto col-10 col-md-8 col-lg-6">
+                    <form action="index.html">
+                        <div class="mb-3">
+                            <input type="text" name="name" placeholder="Nama Peliharaan" class="form-control" id="name"><br><br>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Go</button>
+                        </div>
+                    </form>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let nameInput = document.getElementById('name');
+		nameInput.addEventListener('input', function() {
+		sessionStorage.setItem('name', nameInput.value);
+    });
+    </script>
+</body>
+
+</html>

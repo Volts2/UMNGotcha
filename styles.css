@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+}
+
+#pet img {
+	width: 200px;
+	height: 200px;
+}
+
+#stats, #actions {
+	text-align: center;
+}
+
+#actions button {
+	background-color: #008CBA;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+#actions button:hover {
+	background-color: #0073a9;
+}

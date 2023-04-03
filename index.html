@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Virtual Pet Game</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style>
+		clock {
+			margin: 20px auto;
+  			padding: 0;
+ 			background: #333;
+  			width: 100%;
+  			text-align: center;
+  			line-height: 40px;
+  			color: #fff;
+  			font-size: 34px;
+  			font-family: calibri;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="pet">
+			<img src="Gambar\eeq_badaq.png">
+		</div>
+		<div id="stats">
+			<div id="clock"></div>
+			<h2>Stats <span id="name"></span></h2>
+			<p id="hunger">Hunger: 100%</p>
+			<p id="happiness">Happiness: 100%</p>
+			<p id="cleanliness">Cleanliness: 100%</p>
+			<p id="sleepy">Sleepy: 100%</p>
+			<p id="level">Level: 1</p>
+		</div>
+		<div id="actions">
+			<h2>Actions</h2>
+			<button id="feed">Feed</button>
+			<button onclick="location.href='main.html'">Play</button>
+			<button id="clean">Clean</button>
+			<button id="sleep">Sleep</button>
+			<button onclick="location.href='tic.html'">TicTacToe</button>
+		</div>
+	</div>
+	<script src="app.js"></script>
+	<script>
+		function updateClock() {
+    var currentTime = new Date();
+ 
+    var currentHours = currentTime.getHours();
+  
+    var currentMinutes = currentTime.getMinutes();
+
+    var currentSeconds = currentTime.getSeconds();
+
+    currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+    currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+
+    var greeting = "";
+    if (currentHours >= 19 || currentHours < 4) {
+        greeting = "Selamat Malam!";
+    } else if (currentHours >= 4 && currentHours < 10) {
+        greeting = "Selamat Pagi!";
+    } else if (currentHours >= 10 && currentHours < 16) {
+        greeting = "Selamat Siang!";
+    } else if (currentHours >= 16 && currentHours < 19) {
+        greeting = "Selamat Sore!";
+    }
+    var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + greeting;
+    $("#clock").html(currentTimeString);
+}
+$(document).ready(function () {
+    setInterval(updateClock, 1000);
+});
+
+    	let name = sessionStorage.getItem('name');
+		document.getElementById('name').innerHTML = name;
+	</script>
+</body>
+</html>
