@@ -7,7 +7,7 @@
 
 semua hasilnya ada di branch HTML
 
-JANGAN DOWNLOAD ZIP NANTI WINDOWS DEFENDER NGAMOK
+JANGAN DOWNLOAD ZIP NANTI WINDOWS DEFENDER NGAMOK DIKIRA VIRUS
 ===================================================
 
 mending copy-paste isi html sama js nya ke file lokal di device masing-masing 100% manjur
