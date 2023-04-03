@@ -13,3 +13,6 @@ JANGAN DOWNLOAD ZIP NANTI WINDOWS DEFENDER NGAMOK DIKIRA VIRUS
 ![image](https://user-images.githubusercontent.com/129027498/229568646-f3ad62b7-6ca3-450f-8e3a-ce5d6df96bce.png)
 
 mending copy-paste isi html sama js nya ke file lokal di device masing-masing 100% manjur
+
+NOTICE!!!!
+Untuk bermain movement key menggunakan arrow key
